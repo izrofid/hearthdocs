@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+
 	integrations: [
 		starlight({
 			title: 'Pokemon Hearth',
@@ -26,4 +27,6 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 	},
+	site: 'https://izrofid.github.io',
+  	base: '/hearthdoc',
 });
