@@ -9,7 +9,15 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Pokemon Hearth',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			social: [
+				{ 
+					icon: 'discord', 
+					label: 'Discord', 
+					href: 'https://discord.gg/XDetmVQQZy' 
+				},
+				
+
+			],
 			components: {SiteTitle: './src/starlightOverrides/SiteTitle.astro'},
 			sidebar: [
 				{
@@ -19,6 +27,13 @@ export default defineConfig({
 				{
 					label: 'Guides',
 					autogenerate: { directory: 'guides' },
+				},
+				{
+					label: 'Resources',
+					items:[
+						{ label: 'Online Dex', link: 'https://dex.emeraldimperium.net/', attrs: {target: "_blank",rel: "noopener noreferrer"} },
+						{ label: 'Interactive Map', link: 'https://map.emeraldimperium.net/', attrs: {target: "_blank",rel: "noopener noreferrer"} },
+					]
 				},
 
 			],
